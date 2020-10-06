@@ -19,7 +19,11 @@ function generateElemnt(
 
 
 
+    }
 
+
+
+    
 // }
 // function drawBoard()
 // {
