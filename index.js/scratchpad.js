@@ -7,16 +7,16 @@ let gameStat, boardStat ,currentPlayer ,chickenDinnerCombos, messages, resetButt
 
 
 //function to creat text node
-// this was a mistake
 function addTextNode(type,text) {
     let h = document.createElement(type);
     let t = document.createTextNode(text);
     h.appendChild(t);
+    document.body.appendChild(h)
   
 }
 let heading = addTextNode("h1","work because I tell you too")
 
-function generateElement(type, id, class_list, parent = false, event = false, event_listener_function = false) {//function is loking for thses parameters
+function generateElement(type, id, class_list,  parent = false, event = false, event_listener_function = false) {//function is loking for thses parameters
     
     let newElement = document.createElement(type); //limited scope LET creates varibale NEWELEMENT in html doc  ||  type meaning any elemnt type
     newElement.id = id;//this newly created elemnt has an id that is = to the id pased to the funct     || 
