@@ -5,30 +5,26 @@
 
 ## pesudocode
 
+variables
 
-<!-- functional  programming
-do not abstract every ting to a function
-    ex. function chekc check if ture
-        instead let res = a=== b -->
-
-
-#### render logic ( ui ) the view/ part of the init function
-render the board - for lop to gernate all
+    player1
+    player2
+    symbol
+    current turn
+    gameTiles:
+                0
+                1
+                2
+                3
+                4
+                5
+                6
+                7
+                8
 
 ```funtion generateGameBoard(){
     let board = getElementbyId
-
 }
-```
-render the buttons/header/infomation
-
-
-
-
-
-
-
-
 
 # grey area
 
@@ -37,14 +33,8 @@ rendering who just went
 
 
 
-
-
-
-
-
-
-
 # #### game logic
+
 on tile click method
 - see if time to check win
     - check win
@@ -89,4 +79,33 @@ score tracker
 
 
 
+Premeis : create a tictactoe game
 
+## view 
+
+function init
+- wraps all function
+
+function createBoard()
+- creats 3x3 grid
+- player1 and 2
+-
+
+
+
+## controler
+
+clickHandler/s
+ update model
+ - disable tiles
+ - run chekVictory()
+
+
+## model logic
+set default state to 0
+
+setstate()
+
+chceckstate()
+
+checkVictory()
